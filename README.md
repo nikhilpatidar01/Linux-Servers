@@ -12,9 +12,9 @@
 ## 🌐 DNS Server Overview 🌐
 - 🔠 [DNS Records Types](https://github.com/InfoSecWarrior/Linux-Servers/blob/main/DNS%20Records%20Types.md#-dns-records-)
 - 🌍 [DNS Client Tools (bind-utils)](https://github.com/InfoSecWarrior/Linux-Servers/blob/main/DNS%20Client%20Tools%20bind-utils.md#%EF%B8%8F-dns-client-tools--commands-in-linux)
-  - 🛠️ dig 
-  - 🛠️ nslookup
-  - 🛠️ host
+  - 🛠️ [dig](https://github.com/InfoSecWarrior/Linux-Servers/blob/main/dig%2C%20nslookup%20and%20host%20DNS%20Lookup%20tools.md#%EF%B8%8F-dig-command--dns-lookup--troubleshooting-tool) 
+  - 🛠️ [nslookup](https://github.com/InfoSecWarrior/Linux-Servers/blob/main/dig%2C%20nslookup%20and%20host%20DNS%20Lookup%20tools.md#%EF%B8%8F-nslookup-command--dns-lookup--troubleshooting-tool)
+  - 🛠️ [host](https://github.com/InfoSecWarrior/Linux-Servers/blob/main/dig%2C%20nslookup%20and%20host%20DNS%20Lookup%20tools.md#%EF%B8%8F-host-command--dns-lookup--troubleshooting-tool)
 - 🌐 [DNS Server Types](https://github.com/InfoSecWarrior/Linux-Servers/blob/main/DNS%20Server%20Types.md#--types-of-dns-servers-)
   - 🔄 [Non-Authoritative (Recursive) Nameserver](https://github.com/InfoSecWarrior/Linux-Servers/blob/main/DNS%20Server%20Types.md#1%EF%B8%8F%E2%83%A3-non-authoritative-recursive-nameserver-)
     - 🏪 Caching Nameserver 
