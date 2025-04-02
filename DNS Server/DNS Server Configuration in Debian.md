@@ -1,4 +1,4 @@
-# DNS Server Configuration on Debian
+# DNS Server Configuration in Debian
 
 ## Prerequisites
 - A Debian-based server with root or sudo access.
