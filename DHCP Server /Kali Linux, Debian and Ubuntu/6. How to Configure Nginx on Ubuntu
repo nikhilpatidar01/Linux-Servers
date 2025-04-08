@@ -1,13 +1,14 @@
-How to Configure Nginx on Ubuntu
+# How to Configure Nginx on Ubuntu
 This guide explains how to install and configure Nginx on Ubuntu.
 
-1. Update System Packages
+#1. Update System Packages
 sudo apt update
 sudo apt upgrade -y
 
 sudo apt update
 sudo apt upgrade -y
-2. Install Nginx
+
+#2. Install Nginx
 
 sudo apt install nginx -y
 Check if Nginx is running:
@@ -19,14 +20,16 @@ sudo systemctl start nginx
 Enable it to start on boot:
 
 sudo systemctl enable nginx
-3. Configure Firewall
+
+#3. Configure Firewall
 Allow HTTP (port 80) and HTTPS (port 443) traffic:
 
 sudo ufw allow 'Nginx Full'
 Check firewall status:
 
 sudo ufw status
-4. Basic Nginx Configuration
+
+#4. Basic Nginx Configuration
 Edit the default Nginx site:
 
 sudo nano /etc/nginx/sites-available/default
@@ -47,7 +50,8 @@ server {
 }
 Save and exit (CTRL + X, then Y, then ENTER).
 
-5. Test and Restart Nginx
+
+#5. Test and Restart Nginx
 Check if configuration is correct:
 
 
@@ -65,7 +69,8 @@ Example:
 
 
 sudo nano /var/www/html/index.html
-Write something like:
+
+#Write something like:
 
 
 <!DOCTYPE html>
@@ -79,7 +84,7 @@ Write something like:
 </html>
 Save and exit.
 
-7. Optional: Setting Up SSL with Let's Encrypt (Free HTTPS)
+#7. Optional: Setting Up SSL with Let's Encrypt (Free HTTPS)
 Install Certbot:
 
 sudo apt install certbot python3-certbot-nginx -y
