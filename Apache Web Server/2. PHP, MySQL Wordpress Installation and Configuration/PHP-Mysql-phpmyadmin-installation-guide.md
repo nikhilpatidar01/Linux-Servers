@@ -1,4 +1,3 @@
-
 # PHP, MySQL, and phpMyAdmin Installation Guide (CentOS/RHEL)
 
 This guide provides a complete and structured procedure for installing **PHP**, **MySQL**, and **phpMyAdmin** on CentOS/RHEL-based systems. It includes repository setup, package installation, service management, and basic configuration.
