@@ -1,5 +1,5 @@
 
-# How to Configure Nginx on Ubuntu
+# How to Configure Nginx on Ubuntu/Kali Linux/Debian
 
 This guide explains how to install, configure, and secure an Nginx web server on Ubuntu.
 
