@@ -1,5 +1,5 @@
 
-# How to Configure Nginx on Ubuntu
+# How to Configure Nginx on Ubuntu/Kali Linux/Debian
 
 This guide explains how to install, configure, and secure an Nginx web server on Ubuntu.
 
@@ -10,8 +10,8 @@ This guide explains how to install, configure, and secure an Nginx web server on
 Before installing anything, make sure your system packages are up to date:
 
 ```bash
-sudo apt update
-sudo apt upgrade -y
+ apt update
+ apt upgrade -y
 ```
 
 ---
@@ -21,20 +21,20 @@ sudo apt upgrade -y
 Install the Nginx web server:
 
 ```bash
-sudo apt install nginx -y
+ apt install nginx -y
 ```
 
 ### Check Nginx Status:
 
 ```bash
-sudo systemctl status nginx
+ systemctl status nginx
 ```
 
 If it’s not running, start and enable it:
 
 ```bash
-sudo systemctl start nginx
-sudo systemctl enable nginx
+ systemctl start nginx
+ systemctl enable nginx
 ```
 
 ---
@@ -44,13 +44,13 @@ sudo systemctl enable nginx
 Allow Nginx HTTP and HTTPS traffic through the firewall:
 
 ```bash
-sudo ufw allow 'Nginx Full'
+ ufw allow 'Nginx Full'
 ```
 
 ### Check Firewall Status:
 
 ```bash
-sudo ufw status
+ ufw status
 ```
 
 ---
@@ -60,7 +60,7 @@ sudo ufw status
 Edit the default Nginx site configuration file:
 
 ```bash
-sudo nano /etc/nginx/sites-available/default
+ nano /etc/nginx/sites-available/default
 ```
 
 ### Sample Configuration:
@@ -88,13 +88,13 @@ Save and exit: Press `CTRL + X`, then `Y`, then `ENTER`
 ### Test Configuration:
 
 ```bash
-sudo nginx -t
+ nginx -t
 ```
 
 ### Reload Nginx:
 
 ```bash
-sudo systemctl reload nginx
+ systemctl reload nginx
 ```
 
 ---
@@ -110,7 +110,7 @@ Upload your website content into:
 ### Example: Create a Sample `index.html`
 
 ```bash
-sudo nano /var/www/html/index.html
+ nano /var/www/html/index.html
 ```
 
 Paste this HTML:
@@ -136,13 +136,13 @@ Save and exit.
 Install Certbot and the Nginx plugin:
 
 ```bash
-sudo apt install certbot python3-certbot-nginx -y
+ apt install certbot python3-certbot-nginx -y
 ```
 
 ### Get and Install SSL Certificate:
 
 ```bash
-sudo certbot --nginx
+ certbot --nginx
 ```
 
 Follow the on-screen prompts to configure HTTPS.

@@ -1,55 +1,47 @@
 # PHP, MySQL, and phpMyAdmin Installation Guide (CentOS/RHEL)
 
-This document provides a complete and structured guide to install **PHP**, **MySQL**, and **phpMyAdmin** on CentOS/RHEL systems. The process includes repository setup, service management, and basic configuration.
+This guide provides a complete and structured procedure for installing **PHP**, **MySQL**, and **phpMyAdmin** on CentOS/RHEL-based systems. It includes repository setup, package installation, service management, and basic configuration.
 
 ---
 
 ## 🧠 Introduction
 
-- **PHP (Hypertext Preprocessor):** A server-side scripting language widely used for web development.
-- **MySQL:** An open-source relational database management system (RDBMS).
-- **phpMyAdmin:** A web-based interface for managing MySQL databases using a browser.
-
+- **PHP:** A server-side scripting language used to create dynamic web pages.
+- **MySQL:** A relational database system used to store and manage data.
+- **phpMyAdmin:** A web-based tool to manage MySQL databases easily through a browser.
 ---
-## PHP Installation- 
 
-## 🔹 Step 1: Install Required Repositories
+## 🔧 PHP Installation
 
-### 🔸 Enable EPEL repository
+### 🔹 Step 1: Install Required Repositories
 
-Used to access additional open-source packages.
+#### 🔸 Enable EPEL Repository
+The EPEL (Extra Packages for Enterprise Linux) repository provides additional packages not included in default repos.
 
 ```bash
 yum install epel-release -y
 ```
 
-### 🔸 Install yum utilities
-
-Provides additional package management features.
+#### 🔸 Install Yum Utilities
 
 ```bash
 yum install yum-utils -y
 ```
 
-### 🔸 Add REMI repository
-
-Required for installing modern versions of PHP.
+#### 🔸 Add REMI Repository
+Used for installing the latest versions of PHP.
 
 ```bash
 yum install -y http://rpms.remirepo.net/enterprise/remi-release-9.rpm
 ```
 
-### 🔸 Enable REMI PHP module
-
-Used to install a specific PHP version.
+#### 🔸 Enable REMI PHP Module
 
 ```bash
 yum module enable php:remi-8.2 -y
 ```
 
-### 🔸 Verify REMI installation
-
-Confirms if the REMI repository was added.
+#### 🔸 Verify REMI Installation
 
 ```bash
 rpm -qa | grep remi
@@ -57,19 +49,9 @@ rpm -qa | grep remi
 
 ---
 
-## 🔹 Step 2: Install PHP and Required Extensions
+### 🔹 Step 2: Install PHP and Required Extensions
 
-### 🔸 Install default PHP version
-
-Installs the default PHP version with all common modules.
-
-```bash
-yum install php*
-```
-
-### 🔸 Install specific PHP modules
-
-Better control over which PHP modules get installed.
+#### 🔸 Install PHP with Common Modules
 
 ```bash
 yum install -y \
@@ -78,204 +60,157 @@ php-mbstring php-xml php-pdo php-opcache php-pear \
 php-process php-pecl-http nginx-filesystem
 ```
 
-### 🔸 Check PHP version
-
-Ensures PHP is installed correctly.
+#### 🔸 Verify PHP Installation
 
 ```bash
 php -v
 ```
 
-### ✅ PHP installation is complete. Now we will configure it.
-
-### 🔸 Restart Apache service
-
-Applies PHP settings with web server.
+#### 🔸 Restart Apache to Apply Changes
 
 ```bash
 systemctl restart httpd.service
 ```
 
-### 🔸 Create PHP info file
-
-Verifies PHP installation through browser.
+#### 🔸 Create PHP Info File
 
 ```bash
 vim /var/www/html/phpinfo.php
 ```
 
-Paste this content:
+Insert the following content:
 
 ```php
 <?php
-    phpinfo();
+phpinfo();
 ?>
 ```
 
-### 🔸 View PHP info in browser
+#### 🔸 Access in Browser
 
+Visit:  
 ```
 http://<server-ip>/phpinfo.php
 ```
 
+✅ **PHP installation and verification completed.**
+
 ---
 
-## 🔹  MySQL Installation
+## 🛢️ MySQL Installation
 
-### 🔸 Add MySQL repository
-
-Needed to install the MySQL server.
+### 🔹 Step 1: Add MySQL Repository
 
 ```bash
 yum install -y https://dev.mysql.com/get/mysql80-community-release-el9-1.noarch.rpm
 ```
 
-### 🔸 Verify MySQL repo installation
-
-```bash
-rpm -qa | grep mysql
-```
-
-### 🔸 Install MySQL server
-
-Installs the main MySQL service.
+### 🔹 Step 2: Install MySQL Server
 
 ```bash
 yum install -y mysql-community-server
 ```
 
-### 🔸 Enable MySQL service
-
-Ensures MySQL starts automatically on boot.
+### 🔹 Step 3: Enable & Start MySQL Service
 
 ```bash
 systemctl enable mysqld.service
-```
-
-### 🔸 Start MySQL service
-
-Begins running the database server.
-
-```bash
 systemctl start mysqld.service
 ```
 
-### 🔸 Check MySQL status
+### 🔹 Step 4: Check MySQL Status
 
 ```bash
 systemctl status mysqld.service
 ```
 
-### 🔸 Get temporary root password
-
-Used for first login to MySQL.
+### 🔹 Step 5: Retrieve Temporary MySQL Root Password
 
 ```bash
-cat /var/log/mysqld.log | grep 'temporary password'
+grep 'temporary password' /var/log/mysqld.log
 ```
 
-### 🔸 Secure MySQL installation
+### 🔹 Step 6: Secure MySQL Installation
 
-Sets root password and basic security settings.
+Run the security script and follow the prompts:
 
 ```bash
 mysql_secure_installation
 ```
 
-### 🔸 Login to MySQL
+### 🔹 Step 7: Login to MySQL
 
 ```bash
 mysql -u root -p
 ```
 
-### ① (Optional) Change root password
+(Enter the new root password set during the secure installation process)
+
+### ① (Optional) Change Root Password in SQL
 
 ```sql
-ALTER USER 'root'@'localhost' IDENTIFIED BY 'anujexample';
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'your_new_secure_password';
 ```
 
-### ✅ MySQL installation is complete. Now we will configure it.
+✅ **MySQL installation and basic configuration complete.**
 
 ---
 
-## 🔹  phpMyAdmin Installation
+## 🖥️ phpMyAdmin Installation
 
-### 🔸 Go to temp directory
+### 🔹 Step 1: Download phpMyAdmin
 
 ```bash
 cd /tmp
-```
-
-### 🔸 Download phpMyAdmin zip
-
-```bash
 wget https://files.phpmyadmin.net/phpMyAdmin/5.2.2/phpMyAdmin-5.2.2-all-languages.zip
 ```
 
-### 🔸 Extract phpMyAdmin
+### 🔹 Step 2: Extract phpMyAdmin
 
 ```bash
 unzip phpMyAdmin-5.2.2-all-languages.zip
 ```
 
-### ✅ phpMyAdmin installation is complete. Now we will configure it.
-
-### 🔸 Create target directory
+### 🔹 Step 3: Move to Web Directory
 
 ```bash
-mkdir  /var/www/html/phpmyadmin
-```
-
-### 🔸 Move files to web directory
-
-```bash
+mkdir /var/www/html/phpmyadmin
 mv phpMyAdmin-5.2.2-all-languages/* /var/www/html/phpmyadmin/
 ```
 
-### 🔸 Copy sample config
+### 🔹 Step 4: Configure phpMyAdmin
 
 ```bash
 cp /var/www/html/phpmyadmin/config.sample.inc.php /var/www/html/phpmyadmin/config.inc.php
-```
-
-### 🔸 Edit phpMyAdmin config file and set blowfish secret
-
-Used to configure internal encryption for cookies.
-
-```bash
 vim /var/www/html/phpmyadmin/config.inc.php
 ```
 
-### 🔸 Generate a 32-character random string (Blowfish secret)
-
-```bash
-pwgen 32 -1
-```
-
-Copy the output and set it as the value of:
+Edit the file to set the **blowfish secret**:
 
 ```php
-$cfg['blowfish_secret'] = 'your_random_string_here';
+$cfg['blowfish_secret'] = 'your_random_string_here'; // Must be 32 chars
 ```
 
-### 🔸 Set permissions
+Generate a 32-character random string using:
 
-Allows Apache to access phpMyAdmin.
+```bash
+pwgen 32 1
+```
+
+### 🔹 Step 5: Set Ownership and Permissions
 
 ```bash
 chown -Rv apache:apache /var/www/html/phpmyadmin/
 ```
 
-### 🔸 Restart services
-
-To apply changes for web and DB services.
+### 🔹 Step 6: Restart Services
 
 ```bash
 systemctl restart httpd.service
 systemctl restart mysqld.service
 ```
 
-### 🔸 Access via browser
+### 🔹 Step 7: Access phpMyAdmin via Browser
 
 ```
 http://<server-ip>/phpmyadmin
@@ -283,8 +218,10 @@ http://<server-ip>/phpmyadmin
 
 ### 🔐 Login Credentials
 
-- **Username:** root
-- **Password:** Your MySQL root password
+- **Username:** root  
+- **Password:** (your MySQL root password)
+
+✅ **phpMyAdmin is now installed and accessible.**
 
 ---
 
@@ -292,12 +229,12 @@ http://<server-ip>/phpmyadmin
 
 | Component  | Test Command / URL                            |
 | ---------- | --------------------------------------------- |
-| PHP        | `php -v` and `http://<server-ip>/phpinfo.php` |
+| PHP        | `php -v`, `http://<server-ip>/phpinfo.php`    |
 | MySQL      | `mysql -u root -p`                            |
 | phpMyAdmin | `http://<server-ip>/phpmyadmin`               |
 
 ---
 
----
+> 👨‍💻 Guide by - [Anuj Rawal](https://www.linkedin.com/in/anuj-r-70b364310/)
 
- by - [Anuj-Rawal](https://www.linkedin.com/in/anuj-r-70b364310/)
+---
