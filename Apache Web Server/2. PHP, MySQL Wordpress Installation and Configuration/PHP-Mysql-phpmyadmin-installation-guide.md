@@ -239,5 +239,3 @@ http://<server-ip>/phpmyadmin
 > 👨‍💻 Guide by - [Anuj Rawal](https://www.linkedin.com/in/anuj-r-70b364310/)
 
 ---
-
-Let me know if you'd like this version exported in `.md` format for GitHub or other documentation use!
