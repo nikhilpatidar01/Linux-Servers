@@ -24,11 +24,8 @@
   - 🔐 Authoritative Nameservers 
     - 👑 Primary (Master) Nameserver 
     - 📦 Secondary (Slave) Nameserver
-  
   - 🌍 Multiple Zone Configuration
-    - 🖥️ nikhil.local
-    - 🖥️ patidar.local
-    - 🖥️ ai.local
+    
 
 <h1 align="center"> 🐧🌐 Apache Web Server 🌐 🐧</h1> 
 
