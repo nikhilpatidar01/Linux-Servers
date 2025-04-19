@@ -65,7 +65,6 @@
 
 - 🔧 Network File System (NFS) Installation and Configuration
 
----
 
 <h1 align="center">🗂️🧰 SMB (Samba) Server 🧰🗂️</h1> 
 
@@ -77,7 +76,6 @@
 - 🗂️ Shared Common Directories With Samba  
 - 🔐 Share With Selected Users on Samba  
 
----
 
 <h1 align="center">🗂️📤 Trivial File Transfer Protocol (TFTP) Server 📤🗂️</h1> 
 
@@ -85,5 +83,17 @@
 
 - 📤 TFTP Server Setup  
 - 🖥️ TFTP Client Usage  
+
+---
+
+
+### 🤝 Contributing
+
+<a href="https://github.com/InfoSecWarrior/Linux-Servers/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=InfoSecWarrior/Linux-Servers">
+</a>
+</p>
+
+Feel free to fork this repository and contribute to the guide by submitting pull requests.
 
 ---
