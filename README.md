@@ -82,10 +82,19 @@
 ## ⚡ TFTP (Trivial File Transfer Protocol) Server Installation and Configuration 🧪
 
 - 📤 TFTP Server Setup  
-- 🖥️ TFTP Client Usage  
+- 🖥️ TFTP Client Usage
+
+<h1 align="center">🖧🔐 SSH (Secure Shell) Server 🔐🖧</h1> 
+
+## ⚙️ SSH (Secure Shell) Server Installation and Configuration 🧪
+
+- 🚀 SSH (Secure Shell) Server Setup
+- 🔄 Change Default SSH Port
+- 📍 Bind SSH to a Specific IP Address
+- ⛔ Prevent Root Login via SSH
+- ✅ Enable Root Login via SSH
 
 ---
-
 
 ### 🤝 Contributing
 
