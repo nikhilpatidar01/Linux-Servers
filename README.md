@@ -93,6 +93,10 @@
 - 📍 Bind SSH to a Specific IP Address
 - ⛔ Prevent Root Login via SSH
 - ✅ Enable Root Login via SSH
+- 📁 SSH Public and Private Key Configuration
+- 🛠️ SSH Keygen Usage and SSH Authentication Setup
+- 🚫 Managing IP Allow and Deny in SSH
+- 📋 Managing Access with hosts.allow and hosts.deny
 
 ---
 
