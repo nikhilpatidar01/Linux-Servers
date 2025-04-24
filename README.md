@@ -1,6 +1,3 @@
-Perfect! Toh chaliye main aapke structure ko simple aur clean bana kar deta hoon, jisme **sirf headings par limited emoji use kiya gaya hai** — aur woh bhi **relevant text ke base par**, bina over-decorate kiye. Yeh format professional bhi lagega aur visually thoda engaging bhi hoga.
-
----
 
 # 🖥️ DHCP (Dynamic Host Configuration Protocol) Server
 
