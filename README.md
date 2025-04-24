@@ -103,13 +103,19 @@
 
 ---
 
+
 ### 🤝 Contributing
 
-<a href="https://github.com/InfoSecWarrior/Linux-Servers/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=InfoSecWarrior/Linux-Servers">
-</a>
-</p>
+We welcome contributions from everyone! Whether you're fixing a typo, improving documentation, or adding a new feature — your input is valuable. 🙌
 
-Feel free to fork this repository and contribute to the guide by submitting pull requests.
+[![Contributors](https://contrib.rocks/image?repo=InfoSecWarrior/Linux-Servers)](https://github.com/InfoSecWarrior/Linux-Servers/graphs/contributors)
+
+🚀 **Wanna contribute?** Here's how to get started:
+1. Fork the repo 🍴
+2. Make your changes 🔧
+3. Create a Pull Request ✅
+
+Feel free to check out the contributors who have helped make this project better!
 
 ---
+
