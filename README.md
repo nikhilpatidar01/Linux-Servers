@@ -104,7 +104,7 @@
 ---
 
 
-### 🤝 Contributing
+### 🚀💥 Contributing 🤝💻
 
 We welcome contributions from everyone! Whether you're fixing a typo, improving documentation, or adding a new feature — your input is valuable. 🙌
 
