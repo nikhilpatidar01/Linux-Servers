@@ -94,15 +94,28 @@
 - ⛔ Prevent Root Login via SSH
 - ✅ Enable Root Login via SSH
 
----
+## 🔐 SSH Public and Private Key
 
-### 🤝 Contributing
-
-<a href="https://github.com/InfoSecWarrior/Linux-Servers/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=InfoSecWarrior/Linux-Servers">
-</a>
-</p>
-
-Feel free to fork this repository and contribute to the guide by submitting pull requests.
+- 📁 SSH Public and Private Key Configuration
+- 🛠️ SSH Keygen Usage and SSH Authentication Setup
+- 🚫 Managing IP Allow and Deny in SSH
+- 📋 Managing Access with hosts.allow and hosts.deny
 
 ---
+
+
+### 🚀💥 Contributing 🤝💻
+
+We welcome contributions from everyone! Whether you're fixing a typo, improving documentation, or adding a new feature — your input is valuable. 🙌
+
+[![Contributors](https://contrib.rocks/image?repo=InfoSecWarrior/Linux-Servers)](https://github.com/InfoSecWarrior/Linux-Servers/graphs/contributors)
+
+🚀 **Wanna contribute?** Here's how to get started:
+1. Fork the repo 🍴
+2. Make your changes 🔧
+3. Create a Pull Request ✅
+
+Feel free to check out the contributors who have helped make this project better!
+
+---
+
