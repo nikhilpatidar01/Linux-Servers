@@ -102,32 +102,14 @@
 
 ## 🤝 Contributing
 
-We welcome contributions of all kinds: typo fixes, documentation improvements, and new features.
+We welcome contributions from everyone — whether it's fixing a typo, improving documentation, or adding new features.
 
-### How to Contribute:
-1. Fork the repository  
+### How to contribute:
+1. Fork this repository  
 2. Make your changes  
 3. Submit a Pull Request  
 
-Thanks to all contributors for improving this project!
-
----
-
-Agar chaho toh isi format mein har server ke liye individual README ya documentation file bhi ready kar sakta hoon. Batao kaise aage badhna hai?---
-
-
-### 🚀💥 Contributing 🤝💻
-
-We welcome contributions from everyone! Whether you're fixing a typo, improving documentation, or adding a new feature — your input is valuable. 🙌
-
+Check out the contributors who have helped improve this project:  
 [![Contributors](https://contrib.rocks/image?repo=InfoSecWarrior/Linux-Servers)](https://github.com/InfoSecWarrior/Linux-Servers/graphs/contributors)
 
-🚀 **Wanna contribute?** Here's how to get started:
-1. Fork the repo 🍴
-2. Make your changes 🔧
-3. Create a Pull Request ✅
-
-Feel free to check out the contributors who have helped make this project better!
-
 ---
-
