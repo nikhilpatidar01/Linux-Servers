@@ -99,9 +99,9 @@
 - hosts.allow and hosts.deny Management
 
 ## 🔐 SSH Client Tools
-- 🖥️ SSH (Secure Shell)
-- 📤 SCP (Secure Copy)
-- 🔄 Rsync, WinSCP, PuTTygen
+-  SSH (Secure Shell)
+-  SCP (Secure Copy)
+-  Rsync, WinSCP, PuTTygen
 
 
 ---
