@@ -96,7 +96,13 @@
 - SSH Key Generation and Usage  
 - Public/Private Key Authentication  
 - IP Allow/Deny Configuration  
-- hosts.allow and hosts.deny Management  
+- hosts.allow and hosts.deny Management
+
+## 🔐 SSH Client Tools
+- 🖥️ SSH (Secure Shell)
+- 📤 SCP (Secure Copy)
+- 🔄 Rsync, WinSCP, PuTTygen
+
 
 ---
 
