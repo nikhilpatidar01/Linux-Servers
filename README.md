@@ -116,18 +116,16 @@ Here’s the version without the links:
 
 
 ---
+Here’s a more concise and different version:
+
+---
 
 ## 🤝 Contributing
 
-We welcome contributions from everyone — whether it's fixing a typo, improving documentation, or adding new features.
+Contributions are always welcome! Whether it's fixing bugs, improving documentation, or adding new features, your input is valuable.
 
-Check out the contributors who have helped improve this project:  
+See who’s already contributed:
 
 [![Contributors](https://contrib.rocks/image?repo=InfoSecWarrior/Linux-Servers)](https://github.com/InfoSecWarrior/Linux-Servers/graphs/contributors)
-
-### How to contribute:
-1. Fork this repository  
-2. Make your changes  
-3. Submit a Pull Request  
 
 ---
