@@ -103,6 +103,17 @@
 -  SCP (Secure Copy)
 -  Rsync, WinSCP, PuTTygen
 
+Here’s the version without the links:
+
+---
+
+# 🛡️ Proxy Server Installation and Configuration 
+
+- Squid Proxy Server Setup
+- Access Control List (ACL) in Squid
+- User Authentication Using Squid Proxy
+
+
 
 ---
 
