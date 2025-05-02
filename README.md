@@ -103,20 +103,24 @@
 -  SCP (Secure Copy)
 -  Rsync, WinSCP, PuTTygen
 
-Here’s the version without the links:
 
----
+# 🛡️ Proxy Server Installation and Configuration
 
-# 🛡️ Proxy Server Installation and Configuration 
+* Squid Proxy Server Setup
+* Access Control List (ACL) in Squid
+* User Authentication Using Squid Proxy
+* Squid Transparent Proxy
+* SSL Bump with Squid Proxy
 
-- Squid Proxy Server Setup
-- Access Control List (ACL) in Squid
-- User Authentication Using Squid Proxy
+# 💻 Telnet Server Installation and Configuration
 
+* Telnet Server Setup
 
+# 💡 RDP Remote Desktop Installation and Configuration
 
----
-Here’s a more concise and different version:
+* Rdesktop - What is RDP?
+* Xfreerdp - Xfreerdp Setup Guide
+
 
 ---
 
