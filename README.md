@@ -104,7 +104,7 @@
 -  Rsync, WinSCP, PuTTygen
 
 
-# 🛡️ Proxy Server Installation and Configuration
+# 🛡️ Proxy Server 
 
 * Squid Proxy Server Setup
 * Access Control List (ACL) in Squid
@@ -112,11 +112,11 @@
 * Squid Transparent Proxy
 * SSL Bump with Squid Proxy
 
-# 💻 Telnet Server Installation and Configuration
+# 💻 Telnet Server 
 
 * Telnet Server Setup
 
-# 💡 RDP Remote Desktop Installation and Configuration
+# 💡 RDP Remote Desktop 
 
 * Rdesktop - What is RDP?
 * Xfreerdp - Xfreerdp Setup Guide
