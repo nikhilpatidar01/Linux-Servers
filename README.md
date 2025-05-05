@@ -118,9 +118,11 @@
 
 # 💡 RDP Remote Desktop 
 
-* Rdesktop - What is RDP?
-* Xfreerdp - Xfreerdp Setup Guide
-
+* Rdesktop
+* Xfreerdp 
+* Remmina
+* NoMachine
+* XRDP
 
 ---
 
