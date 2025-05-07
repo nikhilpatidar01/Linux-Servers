@@ -1,16 +1,14 @@
 
-# 🖥️ DHCP (Dynamic Host Configuration Protocol) Server
+## DHCP (Dynamic Host Configuration Protocol) Server
 
 - Dynamic IP Address Assignment  
 - Exclusion of IP Addresses  
 - IP Reservation  
 - Allow and Deny Lists  
-- Separate Pools for Known and Unknown Clients  
-- Nginx Configuration for DHCP  
 
----
 
-# 🌐 DNS (Domain Name System) Server
+
+## DNS (Domain Name System) Server
 
 - DNS Record Types  
 - DNS Client Tools (`dig`, `nslookup`, `host`)  
@@ -22,11 +20,10 @@
   - Authoritative
     - Primary (Master)
     - Secondary (Slave)
-- Multi-Zone Configuration  
 
----
 
-# 🔧 Apache Web Server
+
+## Apache Web Server
 
 - Apache Installation and Configuration  
 - IP-based Binding  
@@ -35,9 +32,9 @@
 - SSL/TLS Binding  
 - Hosting Multiple Websites with SSL  
 
----
 
-# 🐘 PHP, MySQL, and WordPress
+
+## PHP, MySQL, and WordPress
 
 - PHP Installation and Configuration  
 - MySQL Installation and Configuration  
@@ -47,9 +44,9 @@
 - WebDAV with Apache  
 - CGI Script Handling  
 
----
 
-# 📁 FTP (File Transfer Protocol) Server
+
+## FTP (File Transfer Protocol) Server
 
 - Anonymous FTP Access  
 - FTP Client Usage  
@@ -59,15 +56,13 @@
 - FTP Directory Path Configuration  
 - TLS Encryption Support  
 
----
 
-# 📂 NFS (Network File System) Server
+
+## NFS (Network File System) Server
 
 - NFS Server Installation and Configuration  
 
----
-
-# 📦 SMB (Samba) Server
+## SMB (Samba) Server
 
 - Samba Client Tools  
 - Samba Server Setup  
@@ -75,36 +70,27 @@
 - Shared Common Directories  
 - User-Based Sharing  
 
----
 
-# 📤 TFTP (Trivial File Transfer Protocol) Server
+
+## TFTP (Trivial File Transfer Protocol) Server
 
 - TFTP Server Installation  
 - TFTP Client Usage  
 
----
 
-# 🔐 SSH (Secure Shell) Server
 
-- SSH Server Installation  
+## SSH (Secure Shell) Server
+
 - Changing Default SSH Port  
 - Binding SSH to a Specific IP  
 - Enabling/Disabling Root Login  
-
-### 🔑 SSH Public/Private Key Setup
-
-- SSH Key Generation and Usage  
 - Public/Private Key Authentication  
 - IP Allow/Deny Configuration  
-- hosts.allow and hosts.deny Management
-
-## 🔐 SSH Client Tools
 -  SSH (Secure Shell)
 -  SCP (Secure Copy)
--  Rsync, WinSCP, PuTTygen
 
 
-# 🛡️ Proxy Server 
+## Proxy Server 
 
 * Squid Proxy Server Setup
 * Access Control List (ACL) in Squid
@@ -112,11 +98,11 @@
 * Squid Transparent Proxy
 * SSL Bump with Squid Proxy
 
-# 💻 Telnet Server 
+## Telnet Server 
 
 * Telnet Server Setup
 
-# 💡 RDP Remote Desktop 
+## RDP Remote Desktop 
 
 * Rdesktop
 * Xfreerdp 
@@ -124,14 +110,10 @@
 * NoMachine
 * XRDP
 
----
+
 
 ## 🤝 Contributing
 
 Contributions are always welcome! Whether it's fixing bugs, improving documentation, or adding new features, your input is valuable.
 
-See who’s already contributed:
-
-[![Contributors](https://contrib.rocks/image?repo=InfoSecWarrior/Linux-Servers)](https://github.com/InfoSecWarrior/Linux-Servers/graphs/contributors)
-
----
+![Contributors](https://contrib.rocks/image?repo=InfoSecWarrior/Linux-Servers)
