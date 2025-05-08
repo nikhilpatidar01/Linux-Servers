@@ -339,3 +339,91 @@ This configuration enables:
   ```bash
   smbclient -U "" //192.168.1.27/Public -N
   ```
+
+
+## Configure Samba Share for Selected Users
+
+
+
+### Edit Samba Configuration
+
+* Open the Samba configuration file
+
+  ```bash
+  vim /etc/samba/smb.conf
+  ```
+
+* Add or modify the following configuration
+
+  ```ini
+  [global]
+  workgroup = SAMBA
+  security = user
+  passdb backend = tdbsam
+
+  printing = cups
+  printcap name = cups
+  load printers = yes
+  cups options = raw
+
+  [homes]
+  comment = Home Directories
+  valid users = %S, %D%w%S%
+  browseable = no
+  read only = no
+  inherit acls = yes
+
+  [printers]
+  comment = All Printers
+  path = /var/tmp
+  printable = yes
+  create mask = 0600
+  browseable = no
+
+  [print$]
+  comment = Printer Drivers
+  path = /var/lib/samba/drivers
+  write list = @printadmin, root
+  force group = @printadmin
+  create mask = 0664
+  directory mask = 0775
+
+  [data]
+  comment = Data
+  path = /opt/data
+  public = yes
+  writable = yes
+  guest ok = no
+  guest only = no
+
+  [backup]
+  comment = Server Backup
+  path = /backup
+  public = yes
+  writable = yes
+  valid users = infosec, armour
+  ```
+
+The `[backup]` share is accessible **only by the users** `infosec` and `armour` as defined by the `valid users` directive.
+
+
+
+### Access the Restricted Share
+
+* Try accessing the restricted share as a non-permitted user
+
+  ```bash
+  smbclient //192.168.112.145/backup -U smb-user1
+  ```
+
+* Access the share as `infosec`
+
+  ```bash
+  smbclient -L 192.168.112.145 -U infosec
+  ```
+
+* Access the share as `armour`
+
+  ```bash
+  smbclient -L 192.168.112.145 -U armour
+  ```

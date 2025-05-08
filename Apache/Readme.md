@@ -1,5 +1,3 @@
-# Apache Web Server
-
 Apache is an open-source web server software maintained by the **Apache Software Foundation**. It is known for reliability, flexibility, and a strong community.
 
 ## Check if Apache is Installed
