@@ -1,10 +1,8 @@
-## TFTP Server Setup
-
-This guide explains how to install, configure, and verify a TFTP server on RHEL/CentOS systems. TFTP is a simple file transfer protocol, typically used for bootstrapping embedded systems, routers, and PXE booting.
+TFTP is a simple file transfer protocol, typically used for bootstrapping embedded systems, routers, and PXE booting.
 
 
 
-### Package Verification and Installation
+## Installation
 
 
 * **Check if TFTP client or server is installed:**
@@ -201,12 +199,9 @@ Confirm that the TFTP server is listening on the correct port.
   netstat -nltup | grep 69
   ```
 
-  Looks for TFTP listening on UDP port 69.
 
 * **Check using ss:**
 
   ```bash
   ss -uln | grep 69
   ```
-
-  An alternative tool to check UDP port bindings for TFTP.

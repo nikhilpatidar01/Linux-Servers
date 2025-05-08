@@ -137,32 +137,6 @@ This configuration enables:
   ```
 
 
-
-## Set Up Proper Home Directory Permissions
-
-* Create home directories
-
-  ```bash
-  mkdir -p /home/u1 /home/u2
-  ```
-
-* Assign ownership
-
-  ```bash
-  chown u1:u1 /home/u1
-  chown u2:u2 /home/u2
-  ```
-
-* Set permissions
-
-  ```bash
-  chmod 755 /home/u1 /home/u2
-  ```
-
-You may use `chmod 700` for private directories.
-
-
-
 ## Allow Root Login
 
 * Edit deny list

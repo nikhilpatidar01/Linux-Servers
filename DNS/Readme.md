@@ -1,18 +1,3 @@
-## Table of Contents
-
-1. [Introduction](#introduction)
-2. [DNS Server Types](#dns-server-types)
-   * [Caching-Only DNS Server](#caching-only-dns-server)
-   * [Primary (Master) DNS Server](#primary-master-dns-server)
-     * [Forward Zone](#forward-dns)
-     * [Reverse Zone](#reverse-dns)
-   * [Secondary (Slave) DNS Server](#secondary-slave-dns-server)
-   * [Forwarders DNS Server](#forwarders-dns-server)
-3. [DNS Record Types](#dns-record-types)
-
-
-
-## Introduction
 
 The **Domain Name System (DNS)** translates human-readable domain names (e.g., `example.com`) into IP addresses that computers use to identify each other on the network. Proper DNS setup is essential for internet access, internal name resolution, and services such as email.
 
