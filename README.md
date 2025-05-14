@@ -129,4 +129,7 @@ Comprehensive guides to install, configure, and manage various Linux-based serve
 
 Contributions are always welcome. Whether it's fixing bugs, improving documentation, or adding new features, your input is valuable.
 
-![Contributors](https://contrib.rocks/image?repo=InfoSecWarrior/Linux-Servers)
+
+<a href="https://github.com/InfoSecWarrior/Linux-Servers/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=InfoSecWarrior/Linux-Servers" />
+</a>
